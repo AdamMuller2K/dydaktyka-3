@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0030)https://www.darmowylicznik.pl/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Darmowy licznik odwiedzin na stronę</title>
+    
+    <meta name="keywords" content="licznik, darmowy, odwiedzin">
+        <meta name="description" content="Darmowy licznik odwiedzin - załóż licznik, sprawdź popularność swojej strony. Darmowe liczniki - Zapraszamy!">
+        <link href="./Darmowy licznik odwiedzin na stronę_files/style.css" type="text/css" rel="stylesheet">
+    
+      <script type="text/javascript" async="" src="./Darmowy licznik odwiedzin na stronę_files/ga.js.pobierz"></script><script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-17885343-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    
+    <link rel="stylesheet" media="screen" type="text/css" href="./Darmowy licznik odwiedzin na stronę_files/jquery.colorpicker.css">
+    <script type="text/javascript" src="./Darmowy licznik odwiedzin na stronę_files/jquery-1.3.2.min.js.pobierz"></script>
+    <script type="text/javascript" src="./Darmowy licznik odwiedzin na stronę_files/jquery.colorpicker.js.pobierz"></script>
+    <script type="text/javascript" src="./Darmowy licznik odwiedzin na stronę_files/jquery.scripts.js.pobierz"></script>
+      </head>
+
+  <body>
+    <div class="content">
+      <div class="content-top">
+        <img src="./Darmowy licznik odwiedzin na stronę_files/gora_logo.jpg" width="750" height="75" alt="">
+      </div>
+      <div class="menu">
+        <table align="center" cellspacing="0" cellpadding="0"><tbody><tr><td>
+        <ul>
+            <li class="aktywne"><a href="https://www.darmowylicznik.pl/">START</a></li>
+            <li><a href="https://www.darmowylicznik.pl/faq.html">FAQ</a></li>
+            <li><a href="https://www.darmowylicznik.pl/jak-zainstalowac.html">JAK ZAINSTALOWAĆ</a></li>
+            <li><a href="https://www.darmowylicznik.pl/regulamin.html">REGULAMIN</a></li>
+            <li><a href="https://www.darmowylicznik.pl/kontakt.html">KONTAKT</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+        </td></tr></tbody></table>
+      </div>
+      <div>
+         
+    
+    <p align="center">
+      Jeżeli nie posiadasz jeszcze licznika odwiedzin na swojej stronie skorzystaj<br> 
+      z formularza umieszczonego poniżej i stwórz własny darmowy licznik. <br><br>
+      Aby używać tego licznika nie musisz się nigdzie rejestrować. <br>
+      Wystarczy tylko, że umieścisz kod licznika na każdej stronie swojego serwisu. 
+    </p>
+    <div class="plusy-header">Najważniejsze korzyści</div>
+    <div class="plusy">
+      <div class="plus">Zero kosztów</div>
+      <div class="plus-descr">licznik jest <span style="text-decoration: underline;">w pełni darmowy</span></div>
+      <div class="plus">Zero formalności</div>
+      <div class="plus-descr">podajesz <span style="text-decoration: underline;">tylko adres strony internetowej</span>, na której chcesz zainstalować licznik</div>
+      <div class="plus">Zero problemów</div>
+      <div class="plus-descr">licznik działa <span style="text-decoration: underline;">na każdej stronie</span> internetowej</div>
+    </div>
+    <p>&nbsp;</p>
+    
+          <a name="error">&nbsp;</a>
+      <div class="site-error" id="register_form_error">Niepoprawny adres strony</div>
+    
+    <form name="cform" method="post" action="https://www.darmowylicznik.pl/">
+      <div class="register-form">
+        <div class="register-form-box" style="margin-bottom: 20px;">  
+          <div class="left-column" style="font-weight: bold; text-align: right; line-height: 28px;">
+            <span style="font-weight: bold">Podaj adres Twojej strony www:</span>
+          </div>
+          <div class="right-column" style="font-weight: bold;">
+            <input type="text" name="site_url" style="width:270px;" value="http://" class="contact-txt">
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+  
+      <div class="register-form">  
+        <div class="left-column">
+          <div class="register-form-box-header">Wybierz wygląd licznika:</div>
+          <div class="register-form-box-nohead">
+            <div>
+              <table cellspacing="4" cellpadding="0" border="0" width="280">
+                <tbody><tr>
+                  <td>Zacznij zliczać od:</td>
+                  <td align="right">
+                    <input class="counter-start" type="text" name="start" size="12" maxlength="7" value="0" onchange="createCode()">
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="uni-checkbox">Zliczaj tylko unikalne</label></td>
+                  <td align="right">
+                    <input name="uni" value="1" onclick="createCode()" type="checkbox" id="uni-checkbox">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kolor tekstu:</td>
+                  <td>
+                    <div id="fontColorSelector"><div style="background-color: #000000;"></div></div>
+                    <input type="hidden" name="color" class="colorSelectorInput" value="000000" size="6" maxlength="6">
+                    <div class="clear"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obramowanie:</td>
+                  <td align="right">
+                    <select name="border_width" onchange="createCode()">
+                      <option value="0" selected="selected">brak</option>
+                      <option value="1">1 piksel</option>
+                      <option value="2">2 piksele</option>
+                      <option value="3">3 piksele</option>
+                      <option value="4">4 piksele</option>
+                      <option value="5">5 pikseli</option> 
+                    </select>
+                  </td>
+                </tr>
+                <tr class="border-color" style="display: none;">
+                  <td>Kolor obramowania:</td>
+                  <td>
+                    <div id="borderColorSelector"><div style="background-color: #ffffff;"></div></div>
+                    <input type="hidden" name="border_color" class="colorSelectorInput" value="ffffff" size="6" maxlength="6">
+                    <div class="clear"></div>
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+          <div class="register-form-box-header" style="margin-top: 20px;">Wybierz czcionkę:</div>
+          <div class="register-form-box-nohead" style="padding-top: 11px;">
+            <div>
+              <table cellspacing="4" cellpadding="0" border="0">
+                <tbody><tr>
+                  <td>
+                    <div>
+                      <div class="font-radio-box">
+                        <input type="radio" name="font" value="0" onclick="createCode()" id="font-check-0">
+                      </div>
+                      <div class="font-image-box">
+                        <label for="font-check-0">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/font.php" alt="Standardowa">
+                        </label>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    
+                                                                <div>
+                        <div class="font-radio-box">
+                          <input type="radio" name="font" value="1" onclick="createCode()" id="font-check-1">
+                        </div>
+                        <div class="font-image-box">
+                          <label for="font-check-1">
+                            <img src="./Darmowy licznik odwiedzin na stronę_files/font(1).php" alt="Henny_Penny">
+                          </label>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                                                                <div>
+                        <div class="font-radio-box">
+                          <input type="radio" name="font" value="2" onclick="createCode()" id="font-check-2">
+                        </div>
+                        <div class="font-image-box">
+                          <label for="font-check-2">
+                            <img src="./Darmowy licznik odwiedzin na stronę_files/font(2).php" alt="Libre_Baskerville">
+                          </label>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                                                                  </td><td valign="top">
+                                            <div>
+                        <div class="font-radio-box">
+                          <input type="radio" name="font" value="3" onclick="createCode()" id="font-check-3" checked="checked">
+                        </div>
+                        <div class="font-image-box">
+                          <label for="font-check-3">
+                            <img src="./Darmowy licznik odwiedzin na stronę_files/font(3).php" alt="Rationale">
+                          </label>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                                                                <div>
+                        <div class="font-radio-box">
+                          <input type="radio" name="font" value="4" onclick="createCode()" id="font-check-4">
+                        </div>
+                        <div class="font-image-box">
+                          <label for="font-check-4">
+                            <img src="./Darmowy licznik odwiedzin na stronę_files/font(4).php" alt="Roboto_Slab">
+                          </label>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                                                                <div>
+                        <div class="font-radio-box">
+                          <input type="radio" name="font" value="5" onclick="createCode()" id="font-check-5">
+                        </div>
+                        <div class="font-image-box">
+                          <label for="font-check-5">
+                            <img src="./Darmowy licznik odwiedzin na stronę_files/font(5).php" alt="Titillium_Web">
+                          </label>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                                      </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="register-form-box-header">Wybierz tło dla licznika:</div>
+          <div class="register-form-box-nohead">
+            <table cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody><tr>
+                <td>
+                  
+                                      <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="" checked="checked" id="bg-checkbox-1">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-1">Przezroczyste</label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box form-radio-box-big">
+                        <input type="radio" onclick="createCode()" name="bg" value="colorpicker" id="bg-checkbox-2" style="margin-top: 14px;">
+                      </div>
+                      <div class="form-radio-image form-radio-image-big">
+                                              <label for="bg-checkbox-2">
+                          <span class="colorpicker-label">Kolor</span>
+                        </label>
+                        <div id="colorSelector"><div style="background-color: #ffffff;"></div></div>
+                        <input type="hidden" name="colorpicker" class="colorSelectorInput" value="ffffff" size="6" maxlength="6">
+                        <div class="clear"></div>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="blue" id="bg-checkbox-3">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-3">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/blue.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="dirtypink" id="bg-checkbox-4">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-4">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/dirtypink.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="fire" id="bg-checkbox-5">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-5">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/fire.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="green" id="bg-checkbox-6">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-6">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/green.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="lights" id="bg-checkbox-7">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-7">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/lights.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="moon" id="bg-checkbox-8">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-8">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/moon.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="orange" id="bg-checkbox-9">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-9">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/orange.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="people" id="bg-checkbox-10">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-10">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/people.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                          </td><td valign="top">
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="redpink" id="bg-checkbox-11">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-11">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/redpink.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="sunny" id="bg-checkbox-12">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-12">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/sunny.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="tablica" id="bg-checkbox-13">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-13">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/tablica.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="violet" id="bg-checkbox-14">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-14">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/violet.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="wieczor" id="bg-checkbox-15">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-15">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/wieczor.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="yellow" id="bg-checkbox-16">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-16">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/yellow.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="colours" id="bg-checkbox-17">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-17">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/colours.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="mountain" id="bg-checkbox-18">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-18">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/mountain.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="orangesky" id="bg-checkbox-19">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-19">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/orangesky.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                          <div>
+                      <div class="form-radio-box ">
+                        <input type="radio" onclick="createCode()" name="bg" value="palms" id="bg-checkbox-20">
+                      </div>
+                      <div class="form-radio-image ">
+                                              <label for="bg-checkbox-20">
+                          <img src="./Darmowy licznik odwiedzin na stronę_files/palms.png" border="0" alt="">
+                        </label>
+                                            </div>
+                      <div class="clear"></div>
+                    </div>
+                                                      </td>
+              </tr>
+            </tbody></table>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="register-form" style="margin-top: 25px;">
+        <div class="register-form-box">        
+          <div class="left-column" style="width: 300px;">
+              <div style="font-weight: bold; text-align: right;">Podgląd licznika:</div>
+          </div>
+          <div class="right-column" style="width: 300px;">
+            <img src="./Darmowy licznik odwiedzin na stronę_files/licznik.php" name="preview" border="0" alt="">
+          </div>
+          <div class="clear"></div>
+        </div>          
+      </div>
+      
+      <div class="register-button-box">
+        <input type="submit" class="inp_submit register-button" name="c_reg" value="WYGENERUJ KOD LICZNIKA">
+      </div>
+    </form>
+    
+    
+      <script type="text/javascript" src="./Darmowy licznik odwiedzin na stronę_files/licznik.js.pobierz"></script>
+    
+    <script type="text/javascript">
+      createCode()
+    </script>
+  
+                  
+                   <!-- DarmowyLicznik.pl -->
+           <div style="padding:0px;font-size:9px;font-family:Verdana;text-align:center;"><a href="https://www.darmowylicznik.pl/" title="Darmowy licznik odwiedzin" target="_blank"><img src="./Darmowy licznik odwiedzin na stronę_files/licznik(1).php" alt="Darmowy licznik odwiedzin" style="border:0px; width:100px; height:20px;"></a></div>
+           <!-- END DarmowyLicznik.pl -->
+           <div style="padding:10px 0 0 0;font-size:9px;font-family:Verdana;text-align:center;">Zobacz również nasz <a href="https://www.sunrisesystem.pl/audyt-seo/">darmowy audyt seo online</a>.</div>
+              </div>
+      <div class="katalog">
+        <div class="katalog-head"><h4>Zajrzyj do naszego katalogu</h4></div>
+        <div class="katalog-content">
+          <ul>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/biznes-i-ekonomia,1">Biznes i ekonomia</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/domy-i-nieruchomosci,1">Domy i nieruchomości</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/turystyka-i-gastronomia,1">Turystyka i gastronomia</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/firmy-i-przemysl,1">Firmy i Przemysł</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/odziez,1">Odzież</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/rozrywka,1">Rozrywka</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/sklepy-internetowe,1">Sklepy internetowe</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/komputery-i-internet,1">Komputery i internet</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/edukacja-i-uslugi,1">Edukacja i usługi</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/zdrowie-i-uroda,1">Zdrowie i uroda</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/motoryzacja-i-transport,1">Motoryzacja i transport</a>
+              </li>
+                          <li>
+                <a href="https://katalog.darmowylicznik.pl/pozostale,1">Pozostałe</a>
+              </li>
+                      </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div>
+        <!--right_apz-->
+        <div class="footer"> 
+    	    Projekt, realizacja, reklama i pozycjonowanie
+          <a style="font-size:11px; color: black" href="https://www.sunrisesystem.pl/">www.sunrisesystem.pl</a>.
+
+        <div style="padding-top:8px">© 2010 DarmowyLicznik.pl</div>
+        </div>
+        <!--right_apz-->
+      </div>      
+    </div>
+  
+<div class="colorpicker" id="collorpicker_247"><div class="colorpicker_color" style="background-color: rgb(255, 0, 255);"><div><div style="left: 0px; top: 0px;"></div></div></div><div class="colorpicker_hue"><div style="top: 25px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(255, 255, 255);"></div><div class="colorpicker_current_color" style="background-color: rgb(255, 255, 255);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_submit"></div></div><div class="colorpicker" id="collorpicker_740"><div class="colorpicker_color" style="background-color: rgb(255, 0, 255);"><div><div style="left: 0px; top: 0px;"></div></div></div><div class="colorpicker_hue"><div style="top: 25px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(255, 255, 255);"></div><div class="colorpicker_current_color" style="background-color: rgb(255, 255, 255);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_submit"></div></div><div class="colorpicker" id="collorpicker_110"><div class="colorpicker_color" style="background-color: rgb(255, 0, 255);"><div><div style="left: 0px; top: 0px;"></div></div></div><div class="colorpicker_hue"><div style="top: 25px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(255, 255, 255);"></div><div class="colorpicker_current_color" style="background-color: rgb(255, 255, 255);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_submit"></div></div></body></html>

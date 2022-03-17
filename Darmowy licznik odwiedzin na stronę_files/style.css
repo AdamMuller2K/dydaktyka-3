@@ -1,0 +1,160 @@
+body { margin: 0px; padding: 0px; background-color: #e1e1e1; font-family:Arial; font-size:10pt; color:#4F4F4F; }
+
+.clear { clear: both; }
+
+h1 { color:green; font-family:Arial; font-size:16pt; ext-align:center; margin:20px }
+
+h2 { font-size:13pt; }
+
+a:link, a:active, a:visited { color:#006600; font-family:Arial; font-size:10pt; }
+
+a:hover { text-decoration:none; }
+
+#pozycjonowanie {background-image: url('/images/zakladka2.jpg'); width:122px}
+
+div.menu { border: 1px solid gray; border-width: 0px 0px 1px 0px; text-align: center; }
+div.menu ul { margin: 0px; padding: 0px; list-style: none; }
+div.menu ul li { background: #FFFFFF url('/images/zakladka.jpg') repeat-x bottom center;
+  height:20px; line-height: 20px; text-align:center; padding: 0px 20px; margin: 0px 2px;
+  border: 1px solid #CCCCCC; border-bottom: none;
+  -webkit-border-radius: 6px 6px 0px 0px; moz-border-radius: 6px 6px 0px 0px; border-radius: 6px 6px 0px 0px;
+  float: left;
+}
+
+div.menu ul li.aktywne { background-image: url('/images/akt_zakladka.jpg'); }
+
+div.menu a, div.menu a:visited, div.menu a:active { color: green; font-family:Verdana; font-size:11px; text-decoration:none; }
+
+div.adsense { border: 1px solid gray; border-width: 1px 0px 0px 0px; }
+
+div#hm { display: none; }
+
+div.ln { width: 100%; text-align: center; }
+
+div.ln a { color: black; font-size: 7pt; font-weight: bold; margin-right: 14px; }
+
+#login_div {width:250px; height:130px; padding-top:20px; margin:auto; margin-top:100px; margin-bottom:200px; background:#1e8333; color:#000; -moz-border-radius:1em; text-align:center}
+#admin {color:#000; font-size:12px; padding:10px}
+#baner_top {height:28px; border-bottom:#666 1px solid}
+#baner_top ul {padding-left:5px}
+#baner_top li {float:left; list-style:none; border:1px solid #666; border-bottom:0; padding:5px; background:#1e8333; margin:0 5px 0 5px}
+#baner_top li:hover {border:1px solid #fff; border-bottom:0}
+#baner_top li.sel {background:#fbb313; border:1px solid #666; border-bottom:0}
+#baner_top a {text-decoration:none; color:#fff}
+.tlist {background:#fff; margin:auto}
+.tlist td {background:#36ad47; padding:5px}
+.tlist td a {color:#fff; padding:5px}
+.tlist th {background:#1e8333; padding:5px; color:#fff}
+
+#main {width:850px; margin:auto}
+#baner {background:url('/images/gora_logo.jpg') no-repeat center; height:75px}
+#bottom {text-align:center}
+
+#darmowy_menu {width:180px; float:right; background:#1e8333; padding:10px; color:#fff}
+#darmowy_menu a {text-decoration:none; font-size:11px; color:#fff; font-weight:bold}
+#darmowy_menu a.podkat {text-decoration:none; font-weight:normal}
+#darmowy_menu a.podkat:hover {text-decoration:underline}
+#darmowy_menu a.podkat_sel {text-decoration:underline; font-weight:normal}
+
+#darmowy_content {width:530px; float:right; padding:10px}
+.content {margin-bottom:20px; line-height:20px}
+.patka-main-nag {background:#1e8333; padding:4px 5px 4px 5px; color:#fff;}
+.patka-main-nag a {color:#fff; text-decoration:none}
+.patka-main-nag a:hover {text-decoration:underline}
+.cat {font-style:italic; color:#1e8333}
+
+.patka-main h1 {margin:0 0 10px 0; padding:0; font-size:16px}
+.patka-main h1 a {font-size:18px; text-decoration:none}
+
+
+input.contact-txt,
+textarea.contact-txt {
+  background: #FFFFFF; border: 1px solid #CCCCCC; padding: 5px; width: 300px;
+  -webkit-border-radius: 6px; moz-border-radius: 6px; border-radius: 6px; }
+textarea.contact-txt { resize: none; }
+
+div.register-form { width: 620px; margin: 0px auto; }
+div.register-form div.register-form-box {
+  background: #FFFFFF; border: 1px solid #CCCCCC; padding: 10px 3px;
+  -webkit-border-radius: 10px; moz-border-radius: 10px; border-radius: 10px; }
+div.register-form div.register-form-box-nohead {
+  background: #FFFFFF; border: 1px solid #CCCCCC; border-top: none; padding: 0px 3px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px; moz-border-radius: 0px 0px 10px 10px; border-radius: 0px 0px 10px 10px; }
+div.register-form div.register-form-header { font-weight: bold; text-align: center; margin-bottom: 10px; }
+div.register-form div.register-form-box-header { 
+  font-weight: bold; text-align: center; margin: 0px; padding: 5px;
+  background: #EFEFEF; border: 1px solid #CCCCCC; 
+  -webkit-border-radius: 10px 10px 0px 0px; moz-border-radius: 10px 10px 0px 0px; border-radius: 10px 10px 0px 0px; }
+div.left-column { width: 300px; float: left; }
+div.right-column { width: 300px;float: right; }
+
+div.content {
+  background: #FFFFFF; padding: 5px; width: 750px; margin: 10px auto 25px;
+  -webkit-border-radius: 10px; moz-border-radius: 10px; border-radius: 10px;
+  -webkit-box-shadow: #666 0px 5px 5px; moz-box-shadow: #666 0px 5px 5px; box-shadow: #666 0px 5px 5px;
+}
+div.content-top { text-align: center; margin: 1px 0px 15px; }
+
+div.footer {
+  background: transparent url(/images/dol_logo.jpg) no-repeat top center;
+  margin-top: 10px; text-align: center; font-size: 11px; color: black; padding: 0px; line-height: 25px; }
+
+div.register-confirm {
+  padding: 35px; margin: 15px 0px; border: 1px solid #dddddd; background: #F5F5F5;
+  -webkit-border-radius: 10px; moz-border-radius: 10px; border-radius: 10px; }
+div.register-confirm input.register-confirm-old, 
+div.register-confirm input.register-confirm-new,
+input.register-button {
+  background: #EFEFEF url("/images/button-bg.png") repeat-x scroll center bottom; font-weight: bold; 
+  padding: 5px 15px; border: 1px solid #AAAAAA; cursor: pointer; 
+  -webkit-border-radius: 6px; moz-border-radius: 6px; border-radius: 6px; }
+
+div.font-radio-box { float: left; width: 20px; height: 22px; margin: 2px 5px; }
+div.font-image-box { float: left; width: 100px; height: 22px; margin: 2px 5px; }
+
+div.register-code { padding: 25px; }
+div.register-code textarea { width:600px;height:250px;resize: none; border: 1px solid #CCCCCC; }
+
+div.plusy-header {
+  width: 450px; margin: 10px auto 0px; padding: 5px 15px; background: #EFEFEF; border: 1px solid #CCCCCC; font-weight: bold; text-align: center;
+  -webkit-border-radius: 10px 10px 0px 0px; moz-border-radius: 10px 10px 0px 0px; border-radius: 10px 10px 0px 0px; 
+}
+div.plusy { 
+  width: 450px; margin: 0px auto 10px; padding: 15px; background: #FCFCFC; border: 1px solid #CCCCCC; border-top: none;
+  -webkit-border-radius: 0px 0px 10px 10px; moz-border-radius: 0px 0px 10px 10px; border-radius: 0px 0px 10px 10px; }
+div.plus { background: transparent url('/images/plus.png') no-repeat left center; padding-left: 32px; height: 24px;
+  line-height: 24px; font-weight: bold; color: #28B30B; font-size: 12pt; }
+div.plus-descr { font-size: 8pt; margin-bottom: 10px; margin-left: 32px; }
+
+div.site-error { margin: 5px 25px 35px; padding: 10px; border: 1px solid #FF0000; color: #FF0000; background: #FFCBC9; font-weight: bold; text-align: center; }
+div.site-error-ok { margin: 5px 25px 35px; padding: 10px; border: 1px solid #008800; color: #008800; background: #CBFFC9; font-weight: bold; text-align: center; }
+
+div.form-radio-box { float: left; width: 20px; margin: 2px 5px; height: 22px; }
+div.form-radio-box-big { height: 38px; }
+div.form-radio-image { float: left; width: 100px; margin: 2px 5px; height: 22px; }
+div.form-radio-image-big { height: 38px; }
+
+span.colorpicker-label { float: left; padding: 10px 0px; }
+
+input.counter-start { margin-left:3px; width: 55px; text-align: right; border: 1px solid #CCCCCC; }
+
+div.register-button-box { text-align: center; margin-top: 20px; margin-bottom: 30px; }
+
+div.katalog { margin: 20px 1px 0px; }
+div.katalog div.katalog-head {
+    background: #EFEFEF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0px 0px; moz-border-radius: 10px 10px 0px 0px; border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+    font-size: 9pt;
+    margin: 0;
+    padding: 2px 5px;
+    text-align: center;}
+div.katalog div.katalog-content {
+  background: #FFFFFF; border: 1px solid #CCCCCC; border-top: none; padding: 3px;
+  -webkit-border-radius: 0px 0px 10px 10px; moz-border-radius: 0px 0px 10px 10px; border-radius: 0px 0px 10px 10px; }
+div.katalog h4 { margin: 0px; }
+div.katalog ul { list-style: none; margin: 0px; padding: 0px; }
+div.katalog ul li { padding: 0px 10px; float: left; width: 225px; }
+div.katalog ul li a { font-size: 9pt; }

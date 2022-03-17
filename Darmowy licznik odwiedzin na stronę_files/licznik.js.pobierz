@@ -1,0 +1,29 @@
+function createCode(){
+  //var c = document.cform.color.options[document.cform.color.selectedIndex].value;
+  var c = document.cform.color.value;
+  var u = document.cform.uni.checked;
+  for (k=0;k<document.cform.bg.length;k++){
+    if (document.cform.bg[k].checked) {  var b = document.cform.bg[k].value; break;} 
+  }
+  var b2 = document.cform.colorpicker.value;
+  var border_width = document.cform.border_width.options[document.cform.border_width.selectedIndex].value;
+  var x = '';
+  if (border_width > 0) {
+    var border_color = document.cform.border_color.value;
+    x = "&b_width=" + border_width + "&b_color=" + border_color;             
+  }
+  for (k=0;k<document.cform.font.length;k++){
+    if (document.cform.font[k].checked) {  var f = document.cform.font[k].value; break;} 
+  }
+  var s = "licznik.php?id=1000&image=" + b+ "&color=" + c + "&uni=" + u + "&bg=" + b2 + "&f=" + f + x;
+  previewPic(s);
+}
+
+function previewPic(img_src){
+  document['preview'].src=img_src;
+}
+
+if (document.getElementById('register_form_error')) {
+   var element = document.getElementById('register_form_error');
+   element.scrollIntoView(true);
+}

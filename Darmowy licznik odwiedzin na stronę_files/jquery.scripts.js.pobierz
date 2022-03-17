@@ -1,0 +1,78 @@
+$.noConflict();
+jQuery(document).ready(function($) {
+  $('input#bg-checkbox-1').click(function(){
+    $('select[name="border_width"]').val(0);
+    $('tr.border-color').hide();
+    createCode();
+  });
+  $('input[name="font"]').click(function(){
+    if ($(this).val() > 0) {
+      if ($('input#bg-checkbox-1').is(':checked')) {
+        $('input#bg-checkbox-2').click();
+        createCode();
+      }
+    }
+  });
+  function toggle_border_color_selection() {
+    if($('select[name="border_width"]').val() == 0){
+      $('tr.border-color').hide();
+    } else {
+      $('tr.border-color').show();
+    }
+  } 
+  if ($('select[name="border_width"]').length) {
+    toggle_border_color_selection();
+    $('select[name="border_width"]').change(function(){
+      toggle_border_color_selection();
+    });
+  }
+  $('div#colorSelector').ColorPicker({
+  	color: '#ffffff',
+  	onShow: function (colpkr) {
+  		$(colpkr).fadeIn(500);
+  		return false;
+  	},
+  	onHide: function (colpkr) {
+  		$(colpkr).fadeOut(500);
+      $('input#bg-checkbox-2').click();            
+      createCode();
+  		return false;
+  	},
+  	onChange: function (hsb, hex, rgb) {
+  		$('div#colorSelector div').css('backgroundColor', '#' + hex);
+      $('div#colorSelector').siblings('input.colorSelectorInput').val(hex);
+    } 
+  });
+  $('div#fontColorSelector').ColorPicker({
+  	color: '#ffffff',
+  	onShow: function (colpkr) {
+  		$(colpkr).fadeIn(500);
+  		return false;
+  	},
+  	onHide: function (colpkr) {
+  		$(colpkr).fadeOut(500);
+      createCode();
+  		return false;
+  	},
+  	onChange: function (hsb, hex, rgb) {
+  		$('div#fontColorSelector div').css('backgroundColor', '#' + hex);
+      $('div#fontColorSelector').siblings('input.colorSelectorInput').val(hex);
+    } 
+  });
+  $('div#borderColorSelector').ColorPicker({
+  	color: '#ffffff',
+  	onShow: function (colpkr) {
+  		$(colpkr).fadeIn(500);
+  		return false;
+  	},
+  	onHide: function (colpkr) {
+  		$(colpkr).fadeOut(500);
+      createCode();
+  		return false;
+  	},
+  	onChange: function (hsb, hex, rgb) {
+  		$('div#borderColorSelector div').css('backgroundColor', '#' + hex);
+      $('div#borderColorSelector').siblings('input.colorSelectorInput').val(hex);
+    } 
+  });
+});
